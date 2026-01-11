@@ -1,0 +1,27 @@
+name: "Teste de Workflow 01"
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  job01:
+    name: "Job de Teste 01"
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout do código"
+        uses: actions/checkout@v3
+
+      - name: "Exibir mensagem de teste"
+        run:
+          echo "Este é um teste de workflow." 
+          ls -la
+            
+      - name: "Exibir data e hora atuais"
+        run: date
+
+      - name: "Verificar versão do Node.js"
+        run: node -v
