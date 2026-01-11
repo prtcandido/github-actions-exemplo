@@ -30,3 +30,11 @@ jobs:
 
       - name: "Verificar versão do Node.js"
         run: node -v
+
+      - name: "Dados sistema operacional"
+        run: |
+          echo "Sistema operacional: ${RUNNER_OS}"
+          echo "diretório do runner: ${RUNNER_TEMP}"
+          echo "Nome do runner: ${RUNNER_NAME}"
+          echo "Versão do runner: ${RUNNER_VERSION}"
+          echo "Usuario do runner: ${RUNNER_USER}"
