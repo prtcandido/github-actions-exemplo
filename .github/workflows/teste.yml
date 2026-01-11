@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: "Exibir mensagem de teste"
-        run:
+        run: |
           echo "Este é um teste de workflow." 
           ls -la
             
