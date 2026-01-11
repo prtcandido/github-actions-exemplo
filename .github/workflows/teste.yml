@@ -37,4 +37,5 @@ jobs:
           echo "diretório do runner: ${RUNNER_TEMP}"
           echo "Nome do runner: ${RUNNER_NAME}"
           echo "Versão do runner: ${RUNNER_VERSION}"
-          echo "Usuario: ${whoami}"
+          echo "Usuario: ${WHOAMI_USER}"
+          echo "Diretório atual: ${PWD}"
