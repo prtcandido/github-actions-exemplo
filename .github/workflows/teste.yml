@@ -6,6 +6,9 @@ on:
       - main
   workflow_dispatch:
 
+env:
+  EXEMPLO_VAR: "Valor Variavel de Exemplo"
+
 jobs:
   job01:
     name: "Job de Teste 01"
@@ -21,7 +24,9 @@ jobs:
           ls -la
             
       - name: "Exibir data e hora atuais"
-        run: date
+        run: | 
+          date
+          echo "Variável de exemplo: $EXEMPLO_VAR"
 
       - name: "Verificar versão do Node.js"
         run: node -v
