@@ -28,6 +28,9 @@ jobs:
           date
           echo "Variável de exemplo: $EXEMPLO_VAR"
 
+      - name: "Verificar versão do Node.js"
+        run: node -v
+
       - name: "Dados do Runner"
         run: |
           echo "Sistema operacional: ${RUNNER_OS}"
